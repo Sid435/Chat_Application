@@ -17,6 +17,9 @@ public class WebSocketEventListener {
 
 
     private final SimpMessageSendingOperations messageTemplate;
+    /**
+     when someone leaves the chat this method will notify all the users that someone has left the chat. this
+    **/
 
     @EventListener
     public void handleWebSocketDisconnectListener(

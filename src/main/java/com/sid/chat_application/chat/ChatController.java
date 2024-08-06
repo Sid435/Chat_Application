@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 public class ChatController {
 
     @MessageMapping("/chat.sendMessage") //URL to invoke the method
-    @SendTo("/topic/public") // URL to which the message is to hbe sent : this queue
+    @SendTo("/topic/public") // URL to which the message is to be sent : this queue
     public ChatMessage sendMessage(
            @Payload ChatMessage chatMessage
     ){
@@ -18,7 +18,7 @@ public class ChatController {
     }
 
     @MessageMapping("/chat.adduser") //URL to invoke the method
-    @SendTo("/topic/public") // URL to which the message is to hbe sent : this queue
+    @SendTo("/topic/public") // URL to which the message is to hb sent : this queue
     public ChatMessage user(
             @Payload ChatMessage chatMessage,
             SimpMessageHeaderAccessor headerAccessor
